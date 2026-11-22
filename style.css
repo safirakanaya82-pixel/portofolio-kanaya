@@ -313,7 +313,7 @@ ul {
 }
 
 /* =========================================================
-   01. PROFIL & HERO
+1. PROFIL & HERO
 ========================================================= */
 .hero-container {
   display: grid;
@@ -527,7 +527,7 @@ ul {
 }
 
 /* =========================================================
-   02. PENGALAMAN & GALERI FOTO
+02. PENGALAMAN & GALERI FOTO
 ========================================================= */
 .filter-pills {
   display: flex;
@@ -633,6 +633,13 @@ ul {
   color: var(--text-body);
 }
 
+/* Galeri 6 Foto (3 Kolom x 2 Baris) di Dalam Sorotan Utama */
+.featured-banner .photo-gallery.gallery-3 {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--navy-border);
+}
+
 /* Grid Kartu Pengalaman */
 .cards-grid {
   display: grid;
@@ -716,6 +723,11 @@ ul {
   gap: 12px;
 }
 
+.gallery-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
 .gallery-2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -762,7 +774,7 @@ ul {
 }
 
 /* =========================================================
-   03. PENDIDIKAN & PELATIHAN (1 KOLOM ATAS-BAWAH)
+03. PENDIDIKAN & PELATIHAN (1 KOLOM ATAS-BAWAH)
 ========================================================= */
 .edu-split {
   display: grid;
@@ -820,7 +832,7 @@ ul {
 }
 
 /* =========================================================
-   04. KEAHLIAN
+04. KEAHLIAN
 ========================================================= */
 .skills-grid {
   display: grid;
@@ -1109,6 +1121,11 @@ ul {
 
   .nav-menu.open {
     display: flex;
+  }
+
+  .gallery-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .metric-divider,
